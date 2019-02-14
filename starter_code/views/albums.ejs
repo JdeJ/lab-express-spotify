@@ -1,0 +1,11 @@
+<div class="main-artist">
+  <% data.body.items.forEach((album)=>{%>
+  <div class="card">
+    <img src="<%= album.images[0].url %>" alt="" height="100" width="100">
+    <div class="card-body">
+      <h5 class="card-title"><%= album.name%></h5>
+      <a href="/albums/<%= album.id %>/tracks" class="btn btn-primary">View tracks</a>
+    </div>
+  </div>
+  <% }); %>
+</div>

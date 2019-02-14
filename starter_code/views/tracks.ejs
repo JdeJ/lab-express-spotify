@@ -1,0 +1,11 @@
+<div class="main-artist">
+  <% data.body.items.forEach((track)=>{%>
+  <div class="card">
+    <audio
+      controls
+      src="<%= track.preview_url %>">
+    </audio>
+    
+  </div>
+  <% }); %>
+</div>

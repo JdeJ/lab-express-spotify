@@ -1,0 +1,12 @@
+
+<div class="main-artist">
+  <% data.body.artists.items.forEach((artist)=>{%>
+  <div class="card">
+    <img src="<%= artist.images[0].url %>" alt="" height="100" width="100">
+    <div class="card-body">
+      <h5 class="card-title"><%= artist.name%></h5>
+      <a href="/albums/<%= artist.id%>" class="btn btn-primary">View albums</a>
+    </div>
+  </div>
+  <% }); %>
+</div>
